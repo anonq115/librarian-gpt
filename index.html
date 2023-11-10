@@ -25,11 +25,23 @@
             right: 0;
             bottom: 0;
             z-index: -1;
-           background: linear-gradient( 90deg, rgb(255 0 0 / 47%) 0%, rgb(255 154 0 / 43%) 10%, rgb(208 222 33 / 27%) 20%, rgb(79 220 74 / 39%) 30%, rgb(63 218 216 / 34%) 40%, rgb(47 201 226 / 23%) 50%, rgb(28 127 238 / 24%) 60%, rgb(95 21 242 / 35%) 70%, rgb(186 12 248 / 27%) 80%, rgb(251 7 217 / 27%) 90%, rgb(255 0 0 / 65%) 100% );
-    filter: blur(42px);
+       background-image: url('https://pbs.twimg.com/media/FmeKpEoWYAEhEl8?format=jpg&name=4096x4096'); /* Replace with your image path */
+           /* This will cover the entire element area */
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  animation: slideImage 50s linear infinite;
+
+
         }
-            padding-left: 10px;
-        }
+        @keyframes slideImage {
+   0%, 100% {
+        background-position-y: 0%; /* Start from the top */
+    }
+    50% {
+        background-position-y: 100%; /* Reach the bottom */
+    }
+}
         .source {
             color: #555;
         }
