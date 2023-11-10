@@ -34,6 +34,29 @@ background-size: cover;
 
 
         }
+        
+       
+    .tier-IV::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -9999;
+       background-image: url('https://pbs.twimg.com/media/FmeKpEoWYAEhEl8?format=jpg&name=4096x4096'); /* Replace with your image path */
+           /* This will cover the entire element area */
+background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+filter:blur(75px);
+
+ animation: slideImage 50s linear infinite;
+
+        }
+           
+        
         @keyframes slideImage {
    0%, 100% {
         background-position-y: 0%; /* Start from the top */
